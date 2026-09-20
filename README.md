@@ -28,12 +28,12 @@
   <!-- CATEGORIZED SKILL ICONS (PURE SVGs) -->
   <p align="center">
     <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=ts,js,python,go,rust,cpp,html,css&theme=dark" alt="Languages" />
+      <img src="https://skillicons.dev/icons?i=ts,js,python,html,css&theme=dark" alt="Languages" />
     </a>
   </p>
   <p align="center">
     <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,redux,vite,threejs&theme=dark" alt="Frontend Frameworks" />
+      <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite&theme=dark" alt="Frontend Frameworks" />
     </a>
   </p>
   <p align="center">
@@ -48,7 +48,7 @@
   </p>
   <p align="center">
     <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,linux,git,githubactions,postman,nginx,figma&theme=dark" alt="Cloud, DevOps & Tools" />
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,linux,git,githubactions,postman,nginx,figma&theme=dark" alt="Cloud, DevOps & Tools" />
     </a>
   </p>
 
