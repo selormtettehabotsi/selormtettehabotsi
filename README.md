@@ -28,7 +28,7 @@
   <!-- CATEGORIZED SKILL ICONS (PURE SVGs) -->
   <p align="center">
     <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=ts,js,python,html,css&theme=dark" alt="Languages" />
+      <img src="https://skillicons.dev/icons?i=java,ts,js,cpp,python,html,css&theme=dark" alt="Languages" />
     </a>
   </p>
   <p align="center">
@@ -38,7 +38,7 @@
   </p>
   <p align="center">
     <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,django,fastapi,graphql&theme=dark" alt="Backend & APIs" />
+      <img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi,graphql&theme=dark" alt="Backend & APIs" />
     </a>
   </p>
   <p align="center">
