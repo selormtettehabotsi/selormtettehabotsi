@@ -1,0 +1,57 @@
+<svg width="100%" height="24" viewBox="0 0 850 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="30%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#34d399" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .pulse-line {
+        stroke-dasharray: 850;
+        stroke-dashoffset: 850;
+        animation: beamMove 4s ease-in-out infinite;
+      }
+      .glow-diamond {
+        animation: diamondPulse 3s ease-in-out infinite alternate;
+      }
+      @keyframes beamMove {
+        0% { stroke-dashoffset: 850; opacity: 0.2; }
+        50% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: -850; opacity: 0.2; }
+      }
+      @keyframes diamondPulse {
+        0% { transform: scale(0.85); opacity: 0.6; }
+        100% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 6px #818cf8); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base Track -->
+  <line x1="0" y1="12" x2="850" y2="12" stroke="url(#lineGrad)" stroke-width="1.5" />
+
+  <!-- Animated Glowing Laser Pulse -->
+  <line class="pulse-line" x1="0" y1="12" x2="850" y2="12" stroke="url(#laserBeam)" stroke-width="2.5" filter="url(#glow)" />
+
+  <!-- Center Diamond Element -->
+  <g transform="translate(425, 12)">
+    <polygon class="glow-diamond" points="0,-6 6,0 0,6 -6,0" fill="#38bdf8" />
+    <circle cx="0" cy="0" r="2" fill="#ffffff" />
+  </g>
+</svg>

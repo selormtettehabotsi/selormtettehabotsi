@@ -1,0 +1,260 @@
+<svg fill="none" viewBox="0 0 850 260" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          position: relative;
+          width: 100%;
+          height: 260px;
+          border-radius: 16px;
+          background: #090d16;
+          overflow: hidden;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          box-sizing: border-box;
+        }
+
+        /* Glowing background aurora */
+        .aurora-1 {
+          position: absolute;
+          top: -60px;
+          left: -40px;
+          width: 320px;
+          height: 320px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(56, 189, 248, 0) 70%);
+          filter: blur(40px);
+          animation: pulse-glow 8s ease-in-out infinite alternate;
+        }
+
+        .aurora-2 {
+          position: absolute;
+          bottom: -80px;
+          right: -40px;
+          width: 360px;
+          height: 360px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(129, 140, 248, 0.22) 0%, rgba(99, 102, 241, 0) 70%);
+          filter: blur(45px);
+          animation: pulse-glow 10s ease-in-out infinite alternate-reverse;
+        }
+
+        .aurora-3 {
+          position: absolute;
+          top: 30px;
+          right: 35%;
+          width: 240px;
+          height: 240px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(16, 185, 129, 0.18) 0%, rgba(16, 185, 129, 0) 70%);
+          filter: blur(35px);
+          animation: float-slow 12s ease-in-out infinite;
+        }
+
+        /* Tech Grid pattern overlay */
+        .grid-bg {
+          position: absolute;
+          inset: 0;
+          background-image: 
+            linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+          background-size: 30px 30px;
+          mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 85%);
+        }
+
+        /* Glassmorphism content card */
+        .content {
+          position: relative;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          padding: 28px 36px;
+          box-sizing: border-box;
+        }
+
+        .top-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .status-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(16, 185, 129, 0.08);
+          border: 1px solid rgba(16, 185, 129, 0.25);
+          padding: 5px 14px;
+          border-radius: 9999px;
+          font-size: 11px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #34d399;
+        }
+
+        .pulse-dot {
+          position: relative;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #10b981;
+        }
+
+        .pulse-dot::after {
+          content: '';
+          position: absolute;
+          inset: -4px;
+          border-radius: 50%;
+          border: 2px solid #10b981;
+          animation: radar 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+        }
+
+        .terminal-code {
+          font-family: 'Fira Code', 'Courier New', monospace;
+          font-size: 12px;
+          color: rgba(148, 163, 184, 0.8);
+          background: rgba(15, 23, 42, 0.6);
+          padding: 4px 10px;
+          border-radius: 6px;
+          border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .main-heading {
+          margin-top: 6px;
+        }
+
+        .title {
+          font-size: 34px;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          margin: 0 0 6px 0;
+          background: linear-gradient(135deg, #ffffff 30%, #93c5fd 70%, #60a5fa 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 0 0 30px rgba(96, 165, 250, 0.3);
+        }
+
+        .subtitle-container {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .subtitle {
+          font-size: 15px;
+          color: #94a3b8;
+          font-weight: 400;
+          letter-spacing: 0.01em;
+          margin: 0;
+        }
+
+        .sub-highlight {
+          color: #38bdf8;
+          font-weight: 500;
+        }
+
+        .bottom-bar {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          border-top: 1px solid rgba(255, 255, 255, 0.06);
+          padding-top: 14px;
+        }
+
+        .metric-pill {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 12px;
+          color: #cbd5e1;
+          font-family: 'Fira Code', monospace;
+        }
+
+        .metric-icon {
+          width: 14px;
+          height: 14px;
+          stroke: #38bdf8;
+        }
+
+        .metric-sep {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes pulse-glow {
+          0% { transform: scale(1) translate(0, 0); opacity: 0.7; }
+          100% { transform: scale(1.15) translate(20px, 15px); opacity: 1; }
+        }
+
+        @keyframes float-slow {
+          0%, 100% { transform: translateY(0px) scale(1); }
+          50% { transform: translateY(-15px) scale(1.08); }
+        }
+
+        @keyframes radar {
+          0% { transform: scale(0.6); opacity: 1; }
+          100% { transform: scale(2.2); opacity: 0; }
+        }
+      </style>
+
+      <div class="container">
+        <div class="aurora-1"></div>
+        <div class="aurora-2"></div>
+        <div class="aurora-3"></div>
+        <div class="grid-bg"></div>
+
+        <div class="content">
+          <div class="top-row">
+            <div class="status-badge">
+              <span class="pulse-dot"></span>
+              <span>Available for collaborations</span>
+            </div>
+            <div class="terminal-code">~/selorm/workspace/dev</div>
+          </div>
+
+          <div class="main-heading">
+            <h1 class="title">Selorm Tetteh Abotsi</h1>
+            <div class="subtitle-container">
+              <p class="subtitle">Software Engineer &amp; <span class="sub-highlight">Full-Stack Architect</span></p>
+            </div>
+          </div>
+
+          <div class="bottom-bar">
+            <div class="metric-pill">
+              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Full-Stack Systems</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-pill">
+              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <span>Cloud &amp; APIs</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-pill">
+              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              <span>Scalable Architectures</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

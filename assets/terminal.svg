@@ -1,0 +1,170 @@
+<svg fill="none" viewBox="0 0 850 320" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .terminal-window {
+          background: #0d1117;
+          border-radius: 12px;
+          border: 1px solid #30363d;
+          box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+          font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace;
+          overflow: hidden;
+          box-sizing: border-box;
+          height: 320px;
+        }
+
+        .titlebar {
+          background: #161b22;
+          padding: 10px 16px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #30363d;
+        }
+
+        .window-controls {
+          display: flex;
+          gap: 7px;
+        }
+
+        .btn {
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+        }
+
+        .btn-close { background: #ff5f56; }
+        .btn-min { background: #ffbd2e; }
+        .btn-max { background: #27c93f; }
+
+        .terminal-tab {
+          margin-left: 18px;
+          font-size: 11px;
+          color: #8b949e;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          background: #0d1117;
+          padding: 3px 12px;
+          border-radius: 6px;
+          border: 1px solid #30363d;
+        }
+
+        .terminal-body {
+          padding: 18px 24px;
+          font-size: 13px;
+          line-height: 1.65;
+          color: #c9d1d9;
+        }
+
+        .prompt {
+          color: #58a6ff;
+          font-weight: 600;
+        }
+
+        .path {
+          color: #7ee787;
+        }
+
+        .cmd {
+          color: #f0f6fc;
+          font-weight: 500;
+        }
+
+        .output {
+          margin-top: 10px;
+          display: grid;
+          grid-template-columns: auto 1fr;
+          row-gap: 6px;
+          column-gap: 14px;
+        }
+
+        .key {
+          color: #79c0ff;
+          font-weight: 500;
+        }
+
+        .val {
+          color: #a5d6ff;
+        }
+
+        .val-string {
+          color: #7ee787;
+        }
+
+        .val-badge {
+          display: inline-block;
+          background: rgba(56, 189, 248, 0.12);
+          border: 1px solid rgba(56, 189, 248, 0.3);
+          color: #38bdf8;
+          padding: 1px 7px;
+          border-radius: 4px;
+          font-size: 11px;
+        }
+
+        .cursor {
+          display: inline-block;
+          width: 8px;
+          height: 15px;
+          background: #58a6ff;
+          vertical-align: middle;
+          margin-left: 4px;
+          animation: blink 1s step-end infinite;
+        }
+
+        .status-dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #238636;
+          display: inline-block;
+        }
+
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+      </style>
+
+      <div class="terminal-window">
+        <div class="titlebar">
+          <div class="window-controls">
+            <div class="btn btn-close"></div>
+            <div class="btn btn-min"></div>
+            <div class="btn btn-max"></div>
+          </div>
+          <div class="terminal-tab">
+            <span class="status-dot"></span>
+            <span>zsh — selorm@node-cluster ~ </span>
+          </div>
+        </div>
+
+        <div class="terminal-body">
+          <div>
+            <span class="prompt">selorm@cloud</span>:<span class="path">~/profile</span>$ <span class="cmd">cat developer_info.json</span>
+          </div>
+
+          <div class="output">
+            <span class="key">&gt; Identity:</span>
+            <span class="val-string">"Selorm Tetteh Abotsi"</span>
+
+            <span class="key">&gt; Core Focus:</span>
+            <span class="val">Full-Stack Engineering &amp; High-Throughput Scalable Architectures</span>
+
+            <span class="key">&gt; Current Pursuits:</span>
+            <span class="val">Building resilient cloud-native web apps, APIs &amp; interactive developer tools</span>
+
+            <span class="key">&gt; Code Philosophy:</span>
+            <span class="val-string">"Engineered for performance, crafted for precision, built to scale."</span>
+
+            <span class="key">&gt; Collaboration:</span>
+            <span class="val"><span class="val-badge">Open Source</span> <span class="val-badge">Distributed Systems</span> <span class="val-badge">Full-Stack Innovation</span></span>
+          </div>
+
+          <div style="margin-top: 14px;">
+            <span class="prompt">selorm@cloud</span>:<span class="path">~/profile</span>$ <span class="cmd">init --deploy-next-level</span><span class="cursor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
