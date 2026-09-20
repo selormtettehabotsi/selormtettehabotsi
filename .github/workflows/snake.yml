@@ -2,8 +2,8 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    # Run every 12 hours
-    - cron: "0 */12 * * *"
+    # Run every 6 hours automatically to sync contributions
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -27,9 +27,13 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#58a6ff&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
-            assets/snake.svg?palette=github-dark&color_snake=#58a6ff&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
-      - name: Push output branch for alternative embeds
+      - name: Copy latest snake to assets
+        run: |
+          mkdir -p assets
+          cp dist/github-contribution-grid-snake-dark.svg assets/snake.svg
+
+      - name: Push output branch for GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
@@ -37,9 +41,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit updated snake.svg to main
+      - name: Commit updated snake to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/snake.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(cron): sync real contribution snake data" && git push origin main)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(cron): sync real contribution snake data [skip ci]" && git push origin main)
