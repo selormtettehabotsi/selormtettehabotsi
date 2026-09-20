@@ -1,260 +1,164 @@
-<svg fill="none" viewBox="0 0 850 260" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        .container {
-          position: relative;
-          width: 100%;
-          height: 260px;
-          border-radius: 16px;
-          background: #090d16;
-          overflow: hidden;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-          box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          box-sizing: border-box;
-        }
+<svg width="100%" height="260" viewBox="0 0 850 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0d111a"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
 
-        /* Glowing background aurora */
-        .aurora-1 {
-          position: absolute;
-          top: -60px;
-          left: -40px;
-          width: 320px;
-          height: 320px;
-          border-radius: 50%;
-          background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(56, 189, 248, 0) 70%);
-          filter: blur(40px);
-          animation: pulse-glow 8s ease-in-out infinite alternate;
-        }
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.3"/>
+    </linearGradient>
 
-        .aurora-2 {
-          position: absolute;
-          bottom: -80px;
-          right: -40px;
-          width: 360px;
-          height: 360px;
-          border-radius: 50%;
-          background: radial-gradient(circle, rgba(129, 140, 248, 0.22) 0%, rgba(99, 102, 241, 0) 70%);
-          filter: blur(45px);
-          animation: pulse-glow 10s ease-in-out infinite alternate-reverse;
-        }
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
 
-        .aurora-3 {
-          position: absolute;
-          top: 30px;
-          right: 35%;
-          width: 240px;
-          height: 240px;
-          border-radius: 50%;
-          background: radial-gradient(circle, rgba(16, 185, 129, 0.18) 0%, rgba(16, 185, 129, 0) 70%);
-          filter: blur(35px);
-          animation: float-slow 12s ease-in-out infinite;
-        }
+    <!-- Aurora Glow Filters -->
+    <filter id="auroraBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
 
-        /* Tech Grid pattern overlay */
-        .grid-bg {
-          position: absolute;
-          inset: 0;
-          background-image: 
-            linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-          background-size: 30px 30px;
-          mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 85%);
-        }
+    <radialGradient id="aurora1" cx="0%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
 
-        /* Glassmorphism content card */
-        .content {
-          position: relative;
-          z-index: 10;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          height: 100%;
-          padding: 28px 36px;
-          box-sizing: border-box;
-        }
+    <radialGradient id="aurora2" cx="100%" cy="100%" r="80%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
 
-        .top-row {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
+    <radialGradient id="aurora3" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
 
-        .status-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          background: rgba(16, 185, 129, 0.08);
-          border: 1px solid rgba(16, 185, 129, 0.25);
-          padding: 5px 14px;
-          border-radius: 9999px;
-          font-size: 11px;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          font-weight: 600;
-          color: #34d399;
-        }
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
 
-        .pulse-dot {
-          position: relative;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background-color: #10b981;
-        }
+    <style>
+      .glow-blob1 {
+        animation: floatA 9s ease-in-out infinite alternate;
+      }
+      .glow-blob2 {
+        animation: floatB 11s ease-in-out infinite alternate;
+      }
+      .pulse-ring {
+        animation: radarRing 2.4s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+        transform-origin: 52px 42px;
+      }
+      .pulse-core {
+        animation: corePulse 2.4s ease-in-out infinite;
+      }
+      .shine-text {
+        animation: textShine 6s ease-in-out infinite alternate;
+      }
 
-        .pulse-dot::after {
-          content: '';
-          position: absolute;
-          inset: -4px;
-          border-radius: 50%;
-          border: 2px solid #10b981;
-          animation: radar 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
-        }
+      @keyframes floatA {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(30px, 20px) scale(1.15); }
+      }
+      @keyframes floatB {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(-25px, -15px) scale(1.1); }
+      }
+      @keyframes radarRing {
+        0% { r: 4px; opacity: 0.9; }
+        100% { r: 16px; opacity: 0; }
+      }
+      @keyframes corePulse {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 0.5; }
+      }
+      @keyframes textShine {
+        0% { filter: drop-shadow(0 0 2px rgba(96,165,250,0.2)); }
+        100% { filter: drop-shadow(0 0 12px rgba(96,165,250,0.6)); }
+      }
+    </style>
+  </defs>
 
-        .terminal-code {
-          font-family: 'Fira Code', 'Courier New', monospace;
-          font-size: 12px;
-          color: rgba(148, 163, 184, 0.8);
-          background: rgba(15, 23, 42, 0.6);
-          padding: 4px 10px;
-          border-radius: 6px;
-          border: 1px solid rgba(255, 255, 255, 0.06);
-        }
+  <!-- Card Background -->
+  <rect x="1" y="1" width="848" height="258" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.5"/>
 
-        .main-heading {
-          margin-top: 6px;
-        }
+  <!-- Animated Glowing Aurora Blobs -->
+  <g filter="url(#auroraBlur)">
+    <circle class="glow-blob1" cx="80" cy="50" r="140" fill="url(#aurora1)"/>
+    <circle class="glow-blob2" cx="750" cy="200" r="160" fill="url(#aurora2)"/>
+    <circle cx="480" cy="80" r="120" fill="url(#aurora3)"/>
+  </g>
 
-        .title {
-          font-size: 34px;
-          font-weight: 800;
-          letter-spacing: -0.02em;
-          margin: 0 0 6px 0;
-          background: linear-gradient(135deg, #ffffff 30%, #93c5fd 70%, #60a5fa 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          text-shadow: 0 0 30px rgba(96, 165, 250, 0.3);
-        }
+  <!-- Tech Grid Overlay -->
+  <rect x="1" y="1" width="848" height="258" rx="16" fill="url(#gridPattern)" />
 
-        .subtitle-container {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
+  <!-- STATUS BADGE -->
+  <g transform="translate(36, 26)">
+    <rect x="0" y="0" width="220" height="32" rx="16" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.3" stroke-width="1"/>
+    <!-- Radar animation ring -->
+    <circle class="pulse-ring" cx="16" cy="16" r="4" fill="none" stroke="#10b981" stroke-width="1.5"/>
+    <circle class="pulse-core" cx="16" cy="16" r="4" fill="#34d399"/>
+    <text x="32" y="20" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">ACTIVE // OPEN TO WORK</text>
+  </g>
 
-        .subtitle {
-          font-size: 15px;
-          color: #94a3b8;
-          font-weight: 400;
-          letter-spacing: 0.01em;
-          margin: 0;
-        }
+  <!-- TERMINAL DIR BADGE -->
+  <g transform="translate(620, 26)">
+    <rect x="0" y="0" width="194" height="32" rx="8" fill="#0f172a" fill-opacity="0.7" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <!-- Terminal icon -->
+    <path d="M14 11L19 16L14 21" stroke="#38bdf8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="22" y1="21" x2="28" y2="21" stroke="#38bdf8" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="36" y="20" fill="#94a3b8" font-family="'Fira Code', Consolas, monospace" font-size="11">~/selorm/workspace</text>
+  </g>
 
-        .sub-highlight {
-          color: #38bdf8;
-          font-weight: 500;
-        }
+  <!-- MAIN TITLE & IDENTITY -->
+  <text class="shine-text" x="36" y="125" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">SELORM TETTEH ABOTSI</text>
+  
+  <text x="36" y="160" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400">
+    Software Engineer &amp; <tspan fill="#38bdf8" font-weight="600">Full-Stack Architect</tspan>
+  </text>
 
-        .bottom-bar {
-          display: flex;
-          align-items: center;
-          gap: 18px;
-          border-top: 1px solid rgba(255, 255, 255, 0.06);
-          padding-top: 14px;
-        }
+  <!-- BOTTOM METRICS BAR -->
+  <line x1="36" y1="195" x2="814" y2="195" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
-        .metric-pill {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 12px;
-          color: #cbd5e1;
-          font-family: 'Fira Code', monospace;
-        }
+  <!-- Pill 1: Full-Stack Systems -->
+  <g transform="translate(36, 212)">
+    <path d="M6 14L1 9L6 4" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 4L17 9L12 14" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="26" y="13" fill="#cbd5e1" font-family="'Fira Code', Consolas, monospace" font-size="12">Full-Stack Systems</text>
+  </g>
 
-        .metric-icon {
-          width: 14px;
-          height: 14px;
-          stroke: #38bdf8;
-        }
+  <circle cx="230" cy="221" r="2.5" fill="rgba(255,255,255,0.2)"/>
 
-        .metric-sep {
-          width: 4px;
-          height: 4px;
-          border-radius: 50%;
-          background: rgba(255, 255, 255, 0.2);
-        }
+  <!-- Pill 2: Cloud & APIs -->
+  <g transform="translate(254, 212)">
+    <rect x="0" y="2" width="16" height="6" rx="1.5" stroke="#818cf8" stroke-width="1.5"/>
+    <rect x="0" y="11" width="16" height="6" rx="1.5" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="3.5" cy="5" r="0.75" fill="#818cf8"/>
+    <circle cx="3.5" cy="14" r="0.75" fill="#818cf8"/>
+    <text x="24" y="13" fill="#cbd5e1" font-family="'Fira Code', Consolas, monospace" font-size="12">Cloud &amp; Microservices</text>
+  </g>
 
-        @keyframes pulse-glow {
-          0% { transform: scale(1) translate(0, 0); opacity: 0.7; }
-          100% { transform: scale(1.15) translate(20px, 15px); opacity: 1; }
-        }
+  <circle cx="468" cy="221" r="2.5" fill="rgba(255,255,255,0.2)"/>
 
-        @keyframes float-slow {
-          0%, 100% { transform: translateY(0px) scale(1); }
-          50% { transform: translateY(-15px) scale(1.08); }
-        }
+  <!-- Pill 3: Scalable Architectures -->
+  <g transform="translate(492, 212)">
+    <polygon points="8 1 15 5 15 13 8 17 1 13 1 5" stroke="#34d399" stroke-width="1.5" fill="none"/>
+    <line x1="8" y1="1" x2="8" y2="17" stroke="#34d399" stroke-width="1"/>
+    <line x1="1" y1="5" x2="15" y2="13" stroke="#34d399" stroke-width="1"/>
+    <text x="24" y="13" fill="#cbd5e1" font-family="'Fira Code', Consolas, monospace" font-size="12">Scalable Architectures</text>
+  </g>
 
-        @keyframes radar {
-          0% { transform: scale(0.6); opacity: 1; }
-          100% { transform: scale(2.2); opacity: 0; }
-        }
-      </style>
+  <circle cx="710" cy="221" r="2.5" fill="rgba(255,255,255,0.2)"/>
 
-      <div class="container">
-        <div class="aurora-1"></div>
-        <div class="aurora-2"></div>
-        <div class="aurora-3"></div>
-        <div class="grid-bg"></div>
-
-        <div class="content">
-          <div class="top-row">
-            <div class="status-badge">
-              <span class="pulse-dot"></span>
-              <span>Available for collaborations</span>
-            </div>
-            <div class="terminal-code">~/selorm/workspace/dev</div>
-          </div>
-
-          <div class="main-heading">
-            <h1 class="title">Selorm Tetteh Abotsi</h1>
-            <div class="subtitle-container">
-              <p class="subtitle">Software Engineer &amp; <span class="sub-highlight">Full-Stack Architect</span></p>
-            </div>
-          </div>
-
-          <div class="bottom-bar">
-            <div class="metric-pill">
-              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-              <span>Full-Stack Systems</span>
-            </div>
-            <div class="metric-sep"></div>
-            <div class="metric-pill">
-              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Cloud &amp; APIs</span>
-            </div>
-            <div class="metric-sep"></div>
-            <div class="metric-pill">
-              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
-              <span>Scalable Architectures</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+  <!-- Pill 4: Clean Code -->
+  <g transform="translate(734, 212)">
+    <path d="M12 2L3 7L12 12L21 7L12 2Z" stroke="#f472b6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="26" y="13" fill="#cbd5e1" font-family="'Fira Code', Consolas, monospace" font-size="12">Precision</text>
+  </g>
 </svg>

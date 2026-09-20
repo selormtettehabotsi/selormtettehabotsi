@@ -1,170 +1,72 @@
-<svg fill="none" viewBox="0 0 850 320" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        .terminal-window {
-          background: #0d1117;
-          border-radius: 12px;
-          border: 1px solid #30363d;
-          box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
-          font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace;
-          overflow: hidden;
-          box-sizing: border-box;
-          height: 320px;
-        }
+<svg width="100%" height="300" viewBox="0 0 850 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .term-text {
+        font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace;
+        font-size: 13px;
+      }
+      .cursor-blink {
+        animation: blinkCursor 1s step-end infinite;
+      }
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+    </style>
+  </defs>
 
-        .titlebar {
-          background: #161b22;
-          padding: 10px 16px;
-          display: flex;
-          align-items: center;
-          border-bottom: 1px solid #30363d;
-        }
+  <!-- Terminal Window Outer Container -->
+  <rect x="1" y="1" width="848" height="298" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
 
-        .window-controls {
-          display: flex;
-          gap: 7px;
-        }
+  <!-- Titlebar -->
+  <path d="M1 13C1 6.37258 6.37258 1 13 1H837C843.627 1 849 6.37258 849 13V38H1V13Z" fill="#161b22"/>
+  <line x1="1" y1="38" x2="849" y2="38" stroke="#30363d" stroke-width="1"/>
 
-        .btn {
-          width: 11px;
-          height: 11px;
-          border-radius: 50%;
-        }
+  <!-- Window Controls -->
+  <circle cx="24" cy="19" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="19" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="19" r="6" fill="#27c93f"/>
 
-        .btn-close { background: #ff5f56; }
-        .btn-min { background: #ffbd2e; }
-        .btn-max { background: #27c93f; }
+  <!-- Tab Label -->
+  <rect x="90" y="8" width="220" height="22" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <circle cx="104" cy="19" r="3.5" fill="#238636"/>
+  <text x="116" y="23" fill="#8b949e" font-family="'Fira Code', monospace" font-size="11">zsh — selorm@core ~ </text>
 
-        .terminal-tab {
-          margin-left: 18px;
-          font-size: 11px;
-          color: #8b949e;
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          background: #0d1117;
-          padding: 3px 12px;
-          border-radius: 6px;
-          border: 1px solid #30363d;
-        }
+  <!-- Line 1: Command -->
+  <text class="term-text" x="28" y="70">
+    <tspan fill="#58a6ff" font-weight="600">selorm@cloud</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#7ee787">~/profile</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#f0f6fc">cat developer_info.json</tspan>
+  </text>
 
-        .terminal-body {
-          padding: 18px 24px;
-          font-size: 13px;
-          line-height: 1.65;
-          color: #c9d1d9;
-        }
+  <!-- Line 2: Identity -->
+  <text class="term-text" x="42" y="105">
+    <tspan fill="#79c0ff" font-weight="500">&gt; Identity:        </tspan><tspan fill="#7ee787">"Selorm Tetteh Abotsi"</tspan>
+  </text>
 
-        .prompt {
-          color: #58a6ff;
-          font-weight: 600;
-        }
+  <!-- Line 3: Core Focus -->
+  <text class="term-text" x="42" y="135">
+    <tspan fill="#79c0ff" font-weight="500">&gt; Core Focus:      </tspan><tspan fill="#c9d1d9">Full-Stack Engineering, Cloud Systems &amp; Distributed Architecture</tspan>
+  </text>
 
-        .path {
-          color: #7ee787;
-        }
+  <!-- Line 4: Current Pursuits -->
+  <text class="term-text" x="42" y="165">
+    <tspan fill="#79c0ff" font-weight="500">&gt; Mission:         </tspan><tspan fill="#c9d1d9">Engineering resilient backend microservices &amp; dynamic frontend experiences</tspan>
+  </text>
 
-        .cmd {
-          color: #f0f6fc;
-          font-weight: 500;
-        }
+  <!-- Line 5: Code Philosophy -->
+  <text class="term-text" x="42" y="195">
+    <tspan fill="#79c0ff" font-weight="500">&gt; Philosophy:      </tspan><tspan fill="#7ee787">"Engineered for performance, crafted for precision, built to scale."</tspan>
+  </text>
 
-        .output {
-          margin-top: 10px;
-          display: grid;
-          grid-template-columns: auto 1fr;
-          row-gap: 6px;
-          column-gap: 14px;
-        }
+  <!-- Line 6: Collaboration -->
+  <text class="term-text" x="42" y="225">
+    <tspan fill="#79c0ff" font-weight="500">&gt; Collaboration:   </tspan><tspan fill="#38bdf8">[Open Source]</tspan> <tspan fill="#818cf8">[Cloud-Native]</tspan> <tspan fill="#34d399">[Full-Stack Innovation]</tspan>
+  </text>
 
-        .key {
-          color: #79c0ff;
-          font-weight: 500;
-        }
-
-        .val {
-          color: #a5d6ff;
-        }
-
-        .val-string {
-          color: #7ee787;
-        }
-
-        .val-badge {
-          display: inline-block;
-          background: rgba(56, 189, 248, 0.12);
-          border: 1px solid rgba(56, 189, 248, 0.3);
-          color: #38bdf8;
-          padding: 1px 7px;
-          border-radius: 4px;
-          font-size: 11px;
-        }
-
-        .cursor {
-          display: inline-block;
-          width: 8px;
-          height: 15px;
-          background: #58a6ff;
-          vertical-align: middle;
-          margin-left: 4px;
-          animation: blink 1s step-end infinite;
-        }
-
-        .status-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #238636;
-          display: inline-block;
-        }
-
-        @keyframes blink {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0; }
-        }
-      </style>
-
-      <div class="terminal-window">
-        <div class="titlebar">
-          <div class="window-controls">
-            <div class="btn btn-close"></div>
-            <div class="btn btn-min"></div>
-            <div class="btn btn-max"></div>
-          </div>
-          <div class="terminal-tab">
-            <span class="status-dot"></span>
-            <span>zsh — selorm@node-cluster ~ </span>
-          </div>
-        </div>
-
-        <div class="terminal-body">
-          <div>
-            <span class="prompt">selorm@cloud</span>:<span class="path">~/profile</span>$ <span class="cmd">cat developer_info.json</span>
-          </div>
-
-          <div class="output">
-            <span class="key">&gt; Identity:</span>
-            <span class="val-string">"Selorm Tetteh Abotsi"</span>
-
-            <span class="key">&gt; Core Focus:</span>
-            <span class="val">Full-Stack Engineering &amp; High-Throughput Scalable Architectures</span>
-
-            <span class="key">&gt; Current Pursuits:</span>
-            <span class="val">Building resilient cloud-native web apps, APIs &amp; interactive developer tools</span>
-
-            <span class="key">&gt; Code Philosophy:</span>
-            <span class="val-string">"Engineered for performance, crafted for precision, built to scale."</span>
-
-            <span class="key">&gt; Collaboration:</span>
-            <span class="val"><span class="val-badge">Open Source</span> <span class="val-badge">Distributed Systems</span> <span class="val-badge">Full-Stack Innovation</span></span>
-          </div>
-
-          <div style="margin-top: 14px;">
-            <span class="prompt">selorm@cloud</span>:<span class="path">~/profile</span>$ <span class="cmd">init --deploy-next-level</span><span class="cursor"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+  <!-- Line 7: Next Prompt + Blinking Cursor -->
+  <text class="term-text" x="28" y="265">
+    <tspan fill="#58a6ff" font-weight="600">selorm@cloud</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#7ee787">~/profile</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#f0f6fc">init --deploy-future</tspan>
+  </text>
+  
+  <!-- Cursor -->
+  <rect class="cursor-blink" x="382" y="252" width="9" height="16" fill="#58a6ff"/>
 </svg>
