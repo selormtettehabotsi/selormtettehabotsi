@@ -1,6 +1,6 @@
 <div align="center">
 
-  <!-- HERO BANNER -->
+  <!-- HERO BANNER (PURE ANIMATED SVG) -->
   <img src="./assets/header.svg" alt="Selorm Tetteh Abotsi Header" width="100%" />
 
   <br />
@@ -63,7 +63,7 @@
   <!-- STATS & STREAKS DYNAMIC SVGs -->
   <p align="center">
     <a href="https://github.com/selormtettehabotsi">
-      <img src="https://github-readme-stats.vercel.app/api?username=selormtettehabotsi&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=7ee787&text_color=c9d1d9&count_private=true" alt="GitHub Readme Stats" height="175" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=selormtettehabotsi&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=7ee787&text_color=c9d1d9&count_private=true" alt="GitHub Readme Stats" height="175" />
     </a>
     <a href="https://github.com/selormtettehabotsi">
       <img src="https://streak-stats.demolab.com/?user=selormtettehabotsi&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakNum=7ee787&stroke=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak Stats" height="175" />
@@ -72,7 +72,7 @@
 
   <p align="center">
     <a href="https://github.com/selormtettehabotsi">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=selormtettehabotsi&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&count_private=true" alt="Top Languages" height="150" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=selormtettehabotsi&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&count_private=true" alt="Top Languages" height="150" />
     </a>
   </p>
 
@@ -84,27 +84,21 @@
   <img src="./assets/section-activity.svg" alt="Activity Wave" width="100%" />
   <br /><br />
 
-  <!-- LIVE DYNAMIC ACTIVITY GRAPH -->
+  <!-- NATIVE ANIMATED REAL-TIME ACTIVITY WAVE -->
   <p align="center">
-    <a href="https://github.com/selormtettehabotsi">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=selormtettehabotsi&bg_color=0d1117&color=58a6ff&line=7ee787&point=f0f6fc&area=true&hide_border=true" alt="Activity Graph" width="100%" />
-    </a>
+    <img src="./assets/activity-wave.svg" alt="Activity Wave Chart" width="100%" />
   </p>
 
-  <!-- CONTRIBUTION SNAKE ANIMATION -->
+  <!-- NATIVE ANIMATED CONTRIBUTION SNAKE -->
   <p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/selormtettehabotsi/selormtettehabotsi/output/github-contribution-grid-snake-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/selormtettehabotsi/selormtettehabotsi/output/github-contribution-grid-snake.svg" />
-      <img alt="Contribution Snake Animation" src="https://raw.githubusercontent.com/selormtettehabotsi/selormtettehabotsi/output/github-contribution-grid-snake-dark.svg" width="100%" />
-    </picture>
+    <img src="./assets/snake.svg" alt="Contribution Snake Radar" width="100%" />
   </p>
 
   <br />
   <img src="./assets/divider.svg" alt="Divider" width="100%" />
   <br /><br />
 
-  <!-- CONNECT & SOCIALS SECTION -->
+  <!-- CONNECT & COLLABORATE SECTION -->
   <img src="./assets/section-connect.svg" alt="Connect" width="100%" />
   <br /><br />
 
@@ -112,12 +106,11 @@
     <a href="https://github.com/selormtettehabotsi" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="GitHub" />
     </a>
+    &nbsp;
     <a href="https://linkedin.com/in/selormtettehabotsi" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn" />
     </a>
-    <a href="https://twitter.com/selormtetteh" target="_blank">
-      <img src="https://img.shields.io/badge/X%20%2F%20Twitter-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=0d1117" alt="Twitter" />
-    </a>
+    &nbsp;
     <a href="mailto:contact@selorm.dev">
       <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email" />
     </a>
