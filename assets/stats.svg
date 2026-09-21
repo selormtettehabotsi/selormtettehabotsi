@@ -12,22 +12,21 @@
     </linearGradient>
 
     <style>
-      .rank-circle {
-        stroke-dasharray: 260;
-        stroke-dashoffset: 40;
-        animation: circleRotate 4s ease-in-out infinite alternate;
-        transform-origin: 340px 98px;
+      .rank-circle-glow {
+        stroke-dasharray: 238;
+        stroke-dashoffset: 35;
+        animation: ringPulse 3.5s ease-in-out infinite alternate;
       }
-      .rank-glow {
-        animation: pulseRank 2.5s ease-in-out infinite alternate;
+      .rank-text-glow {
+        animation: pulseRankText 2.5s ease-in-out infinite alternate;
       }
-      @keyframes circleRotate {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(15deg); }
+      @keyframes ringPulse {
+        0% { stroke-dashoffset: 45; opacity: 0.85; }
+        100% { stroke-dashoffset: 15; opacity: 1; filter: drop-shadow(0 0 8px #38bdf8); }
       }
-      @keyframes pulseRank {
-        0% { filter: drop-shadow(0 0 4px #38bdf8); }
-        100% { filter: drop-shadow(0 0 12px #818cf8); }
+      @keyframes pulseRankText {
+        0% { filter: drop-shadow(0 0 2px #38bdf8); }
+        100% { filter: drop-shadow(0 0 10px #818cf8); }
       }
     </style>
   </defs>
@@ -80,13 +79,15 @@
     <text x="210" y="15" fill="#f0f6fc" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600">16</text>
   </g>
 
-  <!-- Right Side: Rank Gauge Circle -->
-  <g transform="translate(340, 105)">
-    <!-- Base track -->
-    <circle cx="0" cy="0" r="42" fill="none" stroke="#21262d" stroke-width="5"/>
+  <!-- Right Side: Clean Centered Rank Badge (x=335, y=105) -->
+  <g transform="translate(335, 105)">
+    <!-- Base track ring -->
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#21262d" stroke-width="4.5"/>
     <!-- Animated gradient ring -->
-    <circle class="rank-circle" cx="0" cy="0" r="42" fill="none" stroke="url(#circleGrad)" stroke-width="5.5" stroke-linecap="round"/>
-    <!-- Rank Text -->
-    <text class="rank-glow" x="0" y="8" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" text-anchor="middle">S+</text>
+    <circle class="rank-circle-glow" cx="0" cy="0" r="38" fill="none" stroke="url(#circleGrad)" stroke-width="5" stroke-linecap="round"/>
+    <!-- Inner Dark Badge -->
+    <circle cx="0" cy="0" r="30" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <!-- Centered S+ Text -->
+    <text class="rank-text-glow" x="0" y="8" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" text-anchor="middle">S+</text>
   </g>
 </svg>
