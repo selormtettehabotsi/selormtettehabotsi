@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- HERO BANNER (PURE ANIMATED SVG) -->
-  <img src="./assets/header.svg" alt="Selorm Tetteh Abotsi Header" width="100%" />
+  <img src="./assets/header.svg" alt="Selorm Tetteh-Abotsi Header" width="100%" />
 
   <br />
 
