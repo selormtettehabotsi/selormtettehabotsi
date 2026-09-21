@@ -60,19 +60,21 @@
   <img src="./assets/section-stats.svg" alt="GitHub Analytics" width="100%" />
   <br /><br />
 
-  <!-- STATS & STREAKS DYNAMIC SVGs -->
+  <!-- ACCURATE REAL-DATA STATS & STREAK SVGs -->
   <p align="center">
     <a href="https://github.com/selormtettehabotsi">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=selormtettehabotsi&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=7ee787&text_color=c9d1d9&count_private=true" alt="GitHub Readme Stats" height="175" />
+      <img src="./assets/stats.svg" alt="GitHub Statistics" width="48%" />
     </a>
+    &nbsp;
     <a href="https://github.com/selormtettehabotsi">
-      <img src="https://streak-stats.demolab.com/?user=selormtettehabotsi&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakNum=7ee787&stroke=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak Stats" height="175" />
+      <img src="./assets/streak.svg" alt="GitHub Streak Stats" width="48%" />
     </a>
   </p>
 
+  <!-- ACCURATE REAL-DATA PROGRAMMING LANGUAGES BREAKDOWN -->
   <p align="center">
     <a href="https://github.com/selormtettehabotsi">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=selormtettehabotsi&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&count_private=true" alt="Top Languages" height="150" />
+      <img src="./assets/languages.svg" alt="Top Programming Languages" width="100%" />
     </a>
   </p>
 

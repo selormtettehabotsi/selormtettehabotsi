@@ -1,0 +1,93 @@
+<svg width="100%" height="185" viewBox="0 0 850 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="langCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+
+    <style>
+      .bar-progress {
+        animation: expandBar 1.6s ease-out forwards;
+      }
+      @keyframes expandBar {
+        from { transform: scaleX(0); }
+        to { transform: scaleX(1); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Box -->
+  <rect x="1" y="1" width="848" height="183" rx="12" fill="url(#langCardBg)" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="32" y="32" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="0.5">Top Programming Languages</text>
+
+  <!-- Multi-Segmented Progress Bar (Total 786px width) -->
+  <!-- Java 28%, TypeScript 26%, JavaScript 20%, C++ 14%, Python 8%, HTML/CSS 4% -->
+  <g transform="translate(32, 48)" class="bar-progress" style="transform-origin: 32px 48px;">
+    <!-- Background track -->
+    <rect x="0" y="0" width="786" height="10" rx="5" fill="#21262d"/>
+    
+    <!-- Java (28% = 220px) -->
+    <rect x="0" y="0" width="220" height="10" rx="5" fill="#b07219"/>
+    
+    <!-- TypeScript (26% = 204px) -->
+    <rect x="222" y="0" width="204" height="10" fill="#3178c6"/>
+    
+    <!-- JavaScript (20% = 157px) -->
+    <rect x="428" y="0" width="157" height="10" fill="#f1e05a"/>
+    
+    <!-- C++ (14% = 110px) -->
+    <rect x="587" y="0" width="110" height="10" fill="#f34b7d"/>
+    
+    <!-- Python (8% = 63px) -->
+    <rect x="699" y="0" width="63" height="10" fill="#3572A5"/>
+    
+    <!-- HTML/CSS (4% = 22px) -->
+    <rect x="764" y="0" width="22" height="10" rx="5" fill="#e34c26"/>
+  </g>
+
+  <!-- Language Details Grid (Row 1) -->
+  <!-- Java -->
+  <g transform="translate(32, 90)">
+    <circle cx="6" cy="6" r="5" fill="#b07219"/>
+    <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Java</text>
+    <text x="75" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">28.0%</text>
+  </g>
+
+  <!-- TypeScript -->
+  <g transform="translate(290, 90)">
+    <circle cx="6" cy="6" r="5" fill="#3178c6"/>
+    <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">TypeScript</text>
+    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">26.0%</text>
+  </g>
+
+  <!-- JavaScript -->
+  <g transform="translate(560, 90)">
+    <circle cx="6" cy="6" r="5" fill="#f1e05a"/>
+    <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">JavaScript</text>
+    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">20.0%</text>
+  </g>
+
+  <!-- Language Details Grid (Row 2) -->
+  <!-- C++ -->
+  <g transform="translate(32, 130)">
+    <circle cx="6" cy="6" r="5" fill="#f34b7d"/>
+    <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">C++</text>
+    <text x="75" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">14.0%</text>
+  </g>
+
+  <!-- Python -->
+  <g transform="translate(290, 130)">
+    <circle cx="6" cy="6" r="5" fill="#3572A5"/>
+    <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Python</text>
+    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">8.0%</text>
+  </g>
+
+  <!-- HTML / CSS -->
+  <g transform="translate(560, 130)">
+    <circle cx="6" cy="6" r="5" fill="#e34c26"/>
+    <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">HTML &amp; CSS</text>
+    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">4.0%</text>
+  </g>
+</svg>
