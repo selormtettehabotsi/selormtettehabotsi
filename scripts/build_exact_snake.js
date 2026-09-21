@@ -1,6 +1,8 @@
-// Eating snake generator
+const fs = require('fs');
+const path = require('path');
+
 function generateEatingSnake() {
-  const username = 'selormtettehabotsi';
+  const username = process.env.GITHUB_REPOSITORY_OWNER || 'selormtettehabotsi';
   const totalWeeks = 53;
   const daysPerWeek = 7;
 
@@ -92,7 +94,6 @@ function generateEatingSnake() {
     '#39d353'  // Level 4
   ];
 
-  // Map each active entry with pixel coordinates
   const activeMap = {};
   activeEntries.forEach(item => {
     item.x = startX + item.col * (cellWidth + cellGap);
@@ -101,14 +102,11 @@ function generateEatingSnake() {
     activeMap[`${item.col}_${item.row}`] = item;
   });
 
-  // Build ordered snake slithering path through all active clusters
-  // Sort primarily from left to right, weaving top-to-bottom through each cluster
   const sortedWaypoints = [...activeEntries].sort((a, b) => {
     if (a.col !== b.col) return a.col - b.col;
     return a.row - b.row;
   });
 
-  // Create full path with entrance and exit
   const waypoints = [
     { x: startX - 20, y: startY + 15 },
     ...sortedWaypoints,
@@ -119,9 +117,8 @@ function generateEatingSnake() {
   const totalWaypoints = waypoints.length;
   const totalAnimSec = 20;
 
-  // Build snake keyframes
   let snakeKeyframes = '@keyframes snakeMovement {\n';
-  const eatTimings = {}; // id -> { arrivePct }
+  const eatTimings = {};
 
   waypoints.forEach((wp, idx) => {
     const pct = ((idx / (totalWaypoints - 1)) * 100).toFixed(2);
@@ -132,7 +129,6 @@ function generateEatingSnake() {
   });
   snakeKeyframes += '}\n';
 
-  // Build eating CSS keyframes for each active box
   let boxKeyframesCss = '';
   activeEntries.forEach(item => {
     const originalColor = colors[item.level];
@@ -155,7 +151,6 @@ function generateEatingSnake() {
     `;
   });
 
-  // Render Grid Rects
   let rectsSvg = '';
   for (let c = 0; c < totalWeeks; c++) {
     const x = startX + c * (cellWidth + cellGap);
@@ -170,7 +165,6 @@ function generateEatingSnake() {
     }
   }
 
-  // Month labels
   const months = [
     { name: 'Sep', col: 0 },
     { name: 'Oct', col: 4 },
@@ -264,11 +258,13 @@ ${rectsSvg}
   </g>
 </svg>`;
 
-  const outPath = path.resolve('c:/Users/DELL/Desktop/selormtettehabotsi/assets/snake.svg');
+  const outDir = path.resolve(__dirname, '../assets');
+  if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir, { recursive: true });
+  }
+  const outPath = path.join(outDir, 'snake.svg');
   fs.writeFileSync(outPath, svgContent, 'utf-8');
   console.log(`Generated eating snake SVG to ${outPath}`);
-
-  const scriptPath = path.resolve('c:/Users/DELL/Desktop/selormtettehabotsi/scripts/build_exact_snake.js');
-  fs.writeFileSync(scriptPath, '// Eating snake generator\n' + generateEatingSnake.toString() + '\ngenerateEatingSnake();\n', 'utf-8');
 }
+
 generateEatingSnake();
