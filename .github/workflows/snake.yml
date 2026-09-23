@@ -1,8 +1,8 @@
-name: Generate Contribution Snake
+name: Sync Profile Metrics & Contribution Snake
 
 on:
   schedule:
-    # Run every 6 hours automatically to sync contributions
+    # Run every 6 hours automatically to sync contributions and stats
     - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
@@ -25,10 +25,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generate exact real-data snake SVG
-        run: node scripts/build_exact_snake.js
+      - name: Sync Profile Metrics & Snake SVGs
+        run: node scripts/sync_all_metrics.js
         env:
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Platane snk output branch
         uses: Platane/snk/svg-only@v3
@@ -46,9 +47,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit updated snake to main
+      - name: Commit updated assets to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/snake.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(cron): sync exact real contribution snake data [skip ci]" && git push origin main)
+          git add assets/*.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(sync): update live contribution metrics, stats & snake [skip ci]" && git push origin main)
+
