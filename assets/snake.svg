@@ -89,12 +89,12 @@
       }
     
       @keyframes eat_b_6_6 {
-        0% { fill: #006d32; }
-        3.7% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        3.7% { fill: #0e4429; }
         4.00% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         4.90% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_6_6 {
         animation: eat_b_6_6 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -221,12 +221,12 @@
       }
     
       @keyframes eat_b_34_6 {
-        0% { fill: #39d353; }
-        24.07% { fill: #39d353; }
+        0% { fill: #26a641; }
+        24.07% { fill: #26a641; }
         24.37% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         25.27% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #39d353; }
+        100% { fill: #26a641; }
       }
       .b_34_6 {
         animation: eat_b_34_6 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -269,12 +269,12 @@
       }
     
       @keyframes eat_b_35_6 {
-        0% { fill: #006d32; }
-        31.48% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        31.48% { fill: #0e4429; }
         31.78% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         32.68% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_35_6 {
         animation: eat_b_35_6 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -293,12 +293,12 @@
       }
     
       @keyframes eat_b_37_2 {
-        0% { fill: #006d32; }
-        35.19% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        35.19% { fill: #0e4429; }
         35.49% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         36.39% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_37_2 {
         animation: eat_b_37_2 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -341,12 +341,12 @@
       }
     
       @keyframes eat_b_38_1 {
-        0% { fill: #006d32; }
-        42.59% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        42.59% { fill: #0e4429; }
         42.89% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         43.79% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_38_1 {
         animation: eat_b_38_1 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -389,12 +389,12 @@
       }
     
       @keyframes eat_b_41_5 {
-        0% { fill: #006d32; }
-        50% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        50% { fill: #0e4429; }
         50.30% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         51.20% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_41_5 {
         animation: eat_b_41_5 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -473,12 +473,12 @@
       }
     
       @keyframes eat_b_44_3 {
-        0% { fill: #26a641; }
-        62.96% { fill: #26a641; }
+        0% { fill: #006d32; }
+        62.96% { fill: #006d32; }
         63.26% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         64.16% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #26a641; }
+        100% { fill: #006d32; }
       }
       .b_44_3 {
         animation: eat_b_44_3 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -557,12 +557,12 @@
       }
     
       @keyframes eat_b_46_5 {
-        0% { fill: #006d32; }
-        75.93% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        75.93% { fill: #0e4429; }
         76.23% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         77.13% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_46_5 {
         animation: eat_b_46_5 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -605,12 +605,12 @@
       }
     
       @keyframes eat_b_50_5 {
-        0% { fill: #006d32; }
-        83.33% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        83.33% { fill: #0e4429; }
         83.63% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         84.53% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_50_5 {
         animation: eat_b_50_5 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -641,24 +641,24 @@
       }
     
       @keyframes eat_b_51_1 {
-        0% { fill: #006d32; }
-        88.89% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        88.89% { fill: #0e4429; }
         89.19% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         90.09% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_51_1 {
         animation: eat_b_51_1 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_51_2 {
-        0% { fill: #006d32; }
-        90.74% { fill: #006d32; }
+        0% { fill: #0e4429; }
+        90.74% { fill: #0e4429; }
         91.04% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         91.94% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #006d32; }
+        100% { fill: #0e4429; }
       }
       .b_51_2 {
         animation: eat_b_51_2 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -711,7 +711,7 @@
   <line x1="1" y1="35" x2="849" y2="35" stroke="#30363d" stroke-width="1"/>
   
   <circle cx="20" cy="18" r="4" fill="#58a6ff"/>
-  <text x="32" y="22" fill="#f0f6fc" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600">305 contributions in the last year</text>
+  <text x="32" y="22" fill="#f0f6fc" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600">257 contributions in the last year</text>
   <text x="660" y="22" fill="#7ee787" font-family="'Fira Code', Consolas, monospace" font-size="11">&#x25CF; Live Eating Radar</text>
 
   <!-- Month Labels -->
@@ -784,7 +784,7 @@
     <rect x="145.0" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="145.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="145.0" y="132.5" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_6_6" x="145.0" y="147.0" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_6_6" x="145.0" y="147.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="159.5" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="159.5" y="74.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="159.5" y="89.0" width="11" height="11" rx="2" fill="#161b22"/>
@@ -980,14 +980,14 @@
     <rect x="551.0" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="551.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="551.0" y="132.5" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_34_6" x="551.0" y="147.0" width="11" height="11" rx="2" fill="#39d353"/>
+    <rect class="b_34_6" x="551.0" y="147.0" width="11" height="11" rx="2" fill="#26a641"/>
     <rect class="b_35_0" x="565.5" y="60.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="565.5" y="74.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="565.5" y="89.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="565.5" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect class="b_35_4" x="565.5" y="118.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect class="b_35_5" x="565.5" y="132.5" width="11" height="11" rx="2" fill="#006d32"/>
-    <rect class="b_35_6" x="565.5" y="147.0" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_35_6" x="565.5" y="147.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="580.0" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="580.0" y="74.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect class="b_36_2" x="580.0" y="89.0" width="11" height="11" rx="2" fill="#0e4429"/>
@@ -997,13 +997,13 @@
     <rect x="580.0" y="147.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="594.5" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="594.5" y="74.5" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_37_2" x="594.5" y="89.0" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_37_2" x="594.5" y="89.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect class="b_37_3" x="594.5" y="103.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect class="b_37_4" x="594.5" y="118.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect class="b_37_5" x="594.5" y="132.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="594.5" y="147.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="609.0" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_38_1" x="609.0" y="74.5" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_38_1" x="609.0" y="74.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="609.0" y="89.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="609.0" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="609.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
@@ -1028,7 +1028,7 @@
     <rect x="652.5" y="89.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="652.5" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="652.5" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_41_5" x="652.5" y="132.5" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_41_5" x="652.5" y="132.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="652.5" y="147.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect class="b_42_0" x="667.0" y="60.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="667.0" y="74.5" width="11" height="11" rx="2" fill="#161b22"/>
@@ -1047,7 +1047,7 @@
     <rect x="696.0" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect class="b_44_1" x="696.0" y="74.5" width="11" height="11" rx="2" fill="#006d32"/>
     <rect class="b_44_2" x="696.0" y="89.0" width="11" height="11" rx="2" fill="#26a641"/>
-    <rect class="b_44_3" x="696.0" y="103.5" width="11" height="11" rx="2" fill="#26a641"/>
+    <rect class="b_44_3" x="696.0" y="103.5" width="11" height="11" rx="2" fill="#006d32"/>
     <rect x="696.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="696.0" y="132.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect class="b_44_6" x="696.0" y="147.0" width="11" height="11" rx="2" fill="#26a641"/>
@@ -1063,7 +1063,7 @@
     <rect x="725.0" y="89.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="725.0" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="725.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_46_5" x="725.0" y="132.5" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_46_5" x="725.0" y="132.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect class="b_46_6" x="725.0" y="147.0" width="11" height="11" rx="2" fill="#006d32"/>
     <rect x="739.5" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="739.5" y="74.5" width="11" height="11" rx="2" fill="#161b22"/>
@@ -1091,11 +1091,11 @@
     <rect x="783.0" y="89.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="783.0" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="783.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_50_5" x="783.0" y="132.5" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_50_5" x="783.0" y="132.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect class="b_50_6" x="783.0" y="147.0" width="11" height="11" rx="2" fill="#26a641"/>
     <rect class="b_51_0" x="797.5" y="60.0" width="11" height="11" rx="2" fill="#39d353"/>
-    <rect class="b_51_1" x="797.5" y="74.5" width="11" height="11" rx="2" fill="#006d32"/>
-    <rect class="b_51_2" x="797.5" y="89.0" width="11" height="11" rx="2" fill="#006d32"/>
+    <rect class="b_51_1" x="797.5" y="74.5" width="11" height="11" rx="2" fill="#0e4429"/>
+    <rect class="b_51_2" x="797.5" y="89.0" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect class="b_51_3" x="797.5" y="103.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="797.5" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect class="b_51_5" x="797.5" y="132.5" width="11" height="11" rx="2" fill="#0e4429"/>
