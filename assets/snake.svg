@@ -780,12 +780,12 @@
       }
     
       @keyframes eat_b_52_1 {
-        0% { fill: #0e4429; }
-        96.72% { fill: #0e4429; }
+        0% { fill: #26a641; }
+        96.72% { fill: #26a641; }
         97.02% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
         97.92% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
-        100% { fill: #0e4429; }
+        100% { fill: #26a641; }
       }
       .b_52_1 {
         animation: eat_b_52_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -802,7 +802,7 @@
   <line x1="1" y1="35" x2="849" y2="35" stroke="#30363d" stroke-width="1"/>
   
   <circle cx="20" cy="18" r="4" fill="#58a6ff"/>
-  <text x="32" y="22" fill="#f0f6fc" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600">295 contributions in the last year</text>
+  <text x="32" y="22" fill="#f0f6fc" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600">306 contributions in the last year</text>
   <text x="660" y="22" fill="#7ee787" font-family="'Fira Code', Consolas, monospace" font-size="11">&#x25CF; Live Eating Radar</text>
 
   <!-- Month Labels -->
@@ -1191,7 +1191,7 @@
     <rect class="b_51_5" x="797.5" y="132.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="797.5" y="147.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="812.0" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
-    <rect class="b_52_1" x="812.0" y="74.5" width="11" height="11" rx="2" fill="#0e4429"/>
+    <rect class="b_52_1" x="812.0" y="74.5" width="11" height="11" rx="2" fill="#26a641"/>
     <rect x="812.0" y="89.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="812.0" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="812.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
