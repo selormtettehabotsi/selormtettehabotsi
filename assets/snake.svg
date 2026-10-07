@@ -2,806 +2,819 @@
   <defs>
     <style>
       .snake-head {
-        animation: snakeMovement 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: snakeMovement 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
       .snake-body-1 {
-        animation: snakeMovement 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: snakeMovement 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
         animation-delay: -0.15s;
       }
       .snake-body-2 {
-        animation: snakeMovement 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: snakeMovement 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
         animation-delay: -0.30s;
       }
       .snake-body-3 {
-        animation: snakeMovement 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: snakeMovement 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
         animation-delay: -0.45s;
       }
 
       @keyframes snakeMovement {
   0.00% { transform: translate(38.0px, 75.0px); }
-  1.61% { transform: translate(116.0px, 103.5px); }
-  3.23% { transform: translate(130.5px, 147.0px); }
-  4.84% { transform: translate(145.0px, 147.0px); }
-  6.45% { transform: translate(159.5px, 74.5px); }
-  8.06% { transform: translate(159.5px, 118.0px); }
-  9.68% { transform: translate(420.5px, 103.5px); }
-  11.29% { transform: translate(420.5px, 147.0px); }
-  12.90% { transform: translate(478.5px, 103.5px); }
-  14.52% { transform: translate(478.5px, 118.0px); }
-  16.13% { transform: translate(493.0px, 132.5px); }
-  17.74% { transform: translate(507.5px, 118.0px); }
-  19.35% { transform: translate(507.5px, 132.5px); }
-  20.97% { transform: translate(536.5px, 147.0px); }
-  22.58% { transform: translate(551.0px, 60.0px); }
-  24.19% { transform: translate(551.0px, 74.5px); }
-  25.81% { transform: translate(551.0px, 89.0px); }
-  27.42% { transform: translate(551.0px, 118.0px); }
-  29.03% { transform: translate(551.0px, 132.5px); }
-  30.65% { transform: translate(551.0px, 147.0px); }
-  32.26% { transform: translate(565.5px, 60.0px); }
-  33.87% { transform: translate(565.5px, 89.0px); }
-  35.48% { transform: translate(580.0px, 89.0px); }
-  37.10% { transform: translate(580.0px, 103.5px); }
-  38.71% { transform: translate(580.0px, 118.0px); }
-  40.32% { transform: translate(580.0px, 132.5px); }
-  41.94% { transform: translate(594.5px, 74.5px); }
-  43.55% { transform: translate(609.0px, 60.0px); }
-  45.16% { transform: translate(638.0px, 60.0px); }
-  46.77% { transform: translate(638.0px, 74.5px); }
-  48.39% { transform: translate(638.0px, 132.5px); }
-  50.00% { transform: translate(652.5px, 60.0px); }
-  51.61% { transform: translate(652.5px, 89.0px); }
-  53.23% { transform: translate(667.0px, 74.5px); }
-  54.84% { transform: translate(667.0px, 132.5px); }
-  56.45% { transform: translate(681.5px, 74.5px); }
-  58.06% { transform: translate(681.5px, 89.0px); }
-  59.68% { transform: translate(681.5px, 103.5px); }
-  61.29% { transform: translate(681.5px, 147.0px); }
-  62.90% { transform: translate(696.0px, 103.5px); }
-  64.52% { transform: translate(696.0px, 118.0px); }
-  66.13% { transform: translate(696.0px, 132.5px); }
-  67.74% { transform: translate(696.0px, 147.0px); }
-  69.35% { transform: translate(710.5px, 60.0px); }
-  70.97% { transform: translate(710.5px, 132.5px); }
-  72.58% { transform: translate(710.5px, 147.0px); }
-  74.19% { transform: translate(725.0px, 132.5px); }
-  75.81% { transform: translate(725.0px, 147.0px); }
-  77.42% { transform: translate(768.5px, 132.5px); }
-  79.03% { transform: translate(768.5px, 147.0px); }
-  80.65% { transform: translate(783.0px, 60.0px); }
-  82.26% { transform: translate(783.0px, 74.5px); }
-  83.87% { transform: translate(783.0px, 89.0px); }
-  85.48% { transform: translate(783.0px, 103.5px); }
-  87.10% { transform: translate(783.0px, 132.5px); }
-  88.71% { transform: translate(797.5px, 60.0px); }
-  90.32% { transform: translate(797.5px, 89.0px); }
-  91.94% { transform: translate(797.5px, 103.5px); }
-  93.55% { transform: translate(797.5px, 132.5px); }
-  95.16% { transform: translate(812.0px, 74.5px); }
-  96.77% { transform: translate(812.0px, 89.0px); }
-  98.39% { transform: translate(841.5px, 60.0px); }
+  1.59% { transform: translate(116.0px, 103.5px); }
+  3.17% { transform: translate(130.5px, 147.0px); }
+  4.76% { transform: translate(145.0px, 147.0px); }
+  6.35% { transform: translate(159.5px, 74.5px); }
+  7.94% { transform: translate(159.5px, 118.0px); }
+  9.52% { transform: translate(420.5px, 103.5px); }
+  11.11% { transform: translate(420.5px, 147.0px); }
+  12.70% { transform: translate(478.5px, 103.5px); }
+  14.29% { transform: translate(478.5px, 118.0px); }
+  15.87% { transform: translate(493.0px, 132.5px); }
+  17.46% { transform: translate(507.5px, 118.0px); }
+  19.05% { transform: translate(507.5px, 132.5px); }
+  20.63% { transform: translate(536.5px, 147.0px); }
+  22.22% { transform: translate(551.0px, 60.0px); }
+  23.81% { transform: translate(551.0px, 74.5px); }
+  25.40% { transform: translate(551.0px, 89.0px); }
+  26.98% { transform: translate(551.0px, 118.0px); }
+  28.57% { transform: translate(551.0px, 132.5px); }
+  30.16% { transform: translate(551.0px, 147.0px); }
+  31.75% { transform: translate(565.5px, 60.0px); }
+  33.33% { transform: translate(565.5px, 89.0px); }
+  34.92% { transform: translate(580.0px, 89.0px); }
+  36.51% { transform: translate(580.0px, 103.5px); }
+  38.10% { transform: translate(580.0px, 118.0px); }
+  39.68% { transform: translate(580.0px, 132.5px); }
+  41.27% { transform: translate(594.5px, 74.5px); }
+  42.86% { transform: translate(609.0px, 60.0px); }
+  44.44% { transform: translate(638.0px, 60.0px); }
+  46.03% { transform: translate(638.0px, 74.5px); }
+  47.62% { transform: translate(638.0px, 132.5px); }
+  49.21% { transform: translate(652.5px, 60.0px); }
+  50.79% { transform: translate(652.5px, 89.0px); }
+  52.38% { transform: translate(667.0px, 74.5px); }
+  53.97% { transform: translate(667.0px, 132.5px); }
+  55.56% { transform: translate(681.5px, 74.5px); }
+  57.14% { transform: translate(681.5px, 89.0px); }
+  58.73% { transform: translate(681.5px, 103.5px); }
+  60.32% { transform: translate(681.5px, 147.0px); }
+  61.90% { transform: translate(696.0px, 103.5px); }
+  63.49% { transform: translate(696.0px, 118.0px); }
+  65.08% { transform: translate(696.0px, 132.5px); }
+  66.67% { transform: translate(696.0px, 147.0px); }
+  68.25% { transform: translate(710.5px, 60.0px); }
+  69.84% { transform: translate(710.5px, 132.5px); }
+  71.43% { transform: translate(710.5px, 147.0px); }
+  73.02% { transform: translate(725.0px, 132.5px); }
+  74.60% { transform: translate(725.0px, 147.0px); }
+  76.19% { transform: translate(768.5px, 132.5px); }
+  77.78% { transform: translate(768.5px, 147.0px); }
+  79.37% { transform: translate(783.0px, 60.0px); }
+  80.95% { transform: translate(783.0px, 74.5px); }
+  82.54% { transform: translate(783.0px, 89.0px); }
+  84.13% { transform: translate(783.0px, 103.5px); }
+  85.71% { transform: translate(783.0px, 132.5px); }
+  87.30% { transform: translate(797.5px, 60.0px); }
+  88.89% { transform: translate(797.5px, 89.0px); }
+  90.48% { transform: translate(797.5px, 103.5px); }
+  92.06% { transform: translate(797.5px, 132.5px); }
+  93.65% { transform: translate(812.0px, 74.5px); }
+  95.24% { transform: translate(812.0px, 89.0px); }
+  96.83% { transform: translate(812.0px, 103.5px); }
+  98.41% { transform: translate(841.5px, 60.0px); }
   100.00% { transform: translate(38.0px, 75.0px); }
 }
 
       
       @keyframes eat_b_4_3 {
         0% { fill: #0e4429; }
-        1.61% { fill: #0e4429; }
-        1.91% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        2.81% { fill: #161b22; filter: none; }
+        1.59% { fill: #0e4429; }
+        1.89% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        2.79% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_4_3 {
-        animation: eat_b_4_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_4_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_5_6 {
         0% { fill: #0e4429; }
-        3.23% { fill: #0e4429; }
-        3.53% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        4.43% { fill: #161b22; filter: none; }
+        3.17% { fill: #0e4429; }
+        3.47% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        4.37% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_5_6 {
-        animation: eat_b_5_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_5_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_6_6 {
         0% { fill: #0e4429; }
-        4.84% { fill: #0e4429; }
-        5.14% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        6.04% { fill: #161b22; filter: none; }
+        4.76% { fill: #0e4429; }
+        5.06% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        5.96% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_6_6 {
-        animation: eat_b_6_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_6_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_7_1 {
         0% { fill: #0e4429; }
-        6.45% { fill: #0e4429; }
-        6.75% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        7.65% { fill: #161b22; filter: none; }
+        6.35% { fill: #0e4429; }
+        6.65% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        7.55% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_7_1 {
-        animation: eat_b_7_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_7_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_7_4 {
         0% { fill: #0e4429; }
-        8.06% { fill: #0e4429; }
-        8.36% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        9.26% { fill: #161b22; filter: none; }
+        7.94% { fill: #0e4429; }
+        8.24% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        9.14% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_7_4 {
-        animation: eat_b_7_4 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_7_4 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_25_3 {
         0% { fill: #0e4429; }
-        9.68% { fill: #0e4429; }
-        9.98% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        10.88% { fill: #161b22; filter: none; }
+        9.52% { fill: #0e4429; }
+        9.82% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        10.72% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_25_3 {
-        animation: eat_b_25_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_25_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_25_6 {
         0% { fill: #0e4429; }
-        11.29% { fill: #0e4429; }
-        11.59% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        12.49% { fill: #161b22; filter: none; }
+        11.11% { fill: #0e4429; }
+        11.41% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        12.31% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_25_6 {
-        animation: eat_b_25_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_25_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_29_3 {
         0% { fill: #0e4429; }
-        12.9% { fill: #0e4429; }
-        13.20% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        14.10% { fill: #161b22; filter: none; }
+        12.7% { fill: #0e4429; }
+        13.00% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        13.90% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_29_3 {
-        animation: eat_b_29_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_29_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_29_4 {
         0% { fill: #0e4429; }
-        14.52% { fill: #0e4429; }
-        14.82% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        15.72% { fill: #161b22; filter: none; }
+        14.29% { fill: #0e4429; }
+        14.59% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        15.49% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_29_4 {
-        animation: eat_b_29_4 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_29_4 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_30_5 {
         0% { fill: #0e4429; }
-        16.13% { fill: #0e4429; }
-        16.43% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        17.33% { fill: #161b22; filter: none; }
+        15.87% { fill: #0e4429; }
+        16.17% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        17.07% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_30_5 {
-        animation: eat_b_30_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_30_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_31_4 {
         0% { fill: #006d32; }
-        17.74% { fill: #006d32; }
-        18.04% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        18.94% { fill: #161b22; filter: none; }
+        17.46% { fill: #006d32; }
+        17.76% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        18.66% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_31_4 {
-        animation: eat_b_31_4 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_31_4 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_31_5 {
         0% { fill: #0e4429; }
-        19.35% { fill: #0e4429; }
-        19.65% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        20.55% { fill: #161b22; filter: none; }
+        19.05% { fill: #0e4429; }
+        19.35% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        20.25% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_31_5 {
-        animation: eat_b_31_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_31_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_33_6 {
         0% { fill: #26a641; }
-        20.97% { fill: #26a641; }
-        21.27% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        22.17% { fill: #161b22; filter: none; }
+        20.63% { fill: #26a641; }
+        20.93% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        21.83% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #26a641; }
       }
       .b_33_6 {
-        animation: eat_b_33_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_33_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_34_0 {
         0% { fill: #006d32; }
-        22.58% { fill: #006d32; }
-        22.88% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        23.78% { fill: #161b22; filter: none; }
+        22.22% { fill: #006d32; }
+        22.52% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        23.42% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_34_0 {
-        animation: eat_b_34_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_34_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_34_1 {
         0% { fill: #006d32; }
-        24.19% { fill: #006d32; }
-        24.49% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        25.39% { fill: #161b22; filter: none; }
+        23.81% { fill: #006d32; }
+        24.11% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        25.01% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_34_1 {
-        animation: eat_b_34_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_34_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_34_2 {
         0% { fill: #0e4429; }
-        25.81% { fill: #0e4429; }
-        26.11% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        27.01% { fill: #161b22; filter: none; }
+        25.4% { fill: #0e4429; }
+        25.70% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        26.60% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_34_2 {
-        animation: eat_b_34_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_34_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_34_4 {
         0% { fill: #0e4429; }
-        27.42% { fill: #0e4429; }
-        27.72% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        28.62% { fill: #161b22; filter: none; }
+        26.98% { fill: #0e4429; }
+        27.28% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        28.18% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_34_4 {
-        animation: eat_b_34_4 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_34_4 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_34_5 {
         0% { fill: #006d32; }
-        29.03% { fill: #006d32; }
-        29.33% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        30.23% { fill: #161b22; filter: none; }
+        28.57% { fill: #006d32; }
+        28.87% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        29.77% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_34_5 {
-        animation: eat_b_34_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_34_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_34_6 {
         0% { fill: #006d32; }
-        30.65% { fill: #006d32; }
-        30.95% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        31.85% { fill: #161b22; filter: none; }
+        30.16% { fill: #006d32; }
+        30.46% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        31.36% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_34_6 {
-        animation: eat_b_34_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_34_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_35_0 {
         0% { fill: #0e4429; }
-        32.26% { fill: #0e4429; }
-        32.56% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        33.46% { fill: #161b22; filter: none; }
+        31.75% { fill: #0e4429; }
+        32.05% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        32.95% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_35_0 {
-        animation: eat_b_35_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_35_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_35_2 {
         0% { fill: #0e4429; }
-        33.87% { fill: #0e4429; }
-        34.17% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        35.07% { fill: #161b22; filter: none; }
+        33.33% { fill: #0e4429; }
+        33.63% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        34.53% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_35_2 {
-        animation: eat_b_35_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_35_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_36_2 {
         0% { fill: #0e4429; }
-        35.48% { fill: #0e4429; }
-        35.78% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        36.68% { fill: #161b22; filter: none; }
+        34.92% { fill: #0e4429; }
+        35.22% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        36.12% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_36_2 {
-        animation: eat_b_36_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_36_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_36_3 {
         0% { fill: #0e4429; }
-        37.1% { fill: #0e4429; }
-        37.40% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        38.30% { fill: #161b22; filter: none; }
+        36.51% { fill: #0e4429; }
+        36.81% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        37.71% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_36_3 {
-        animation: eat_b_36_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_36_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_36_4 {
         0% { fill: #0e4429; }
-        38.71% { fill: #0e4429; }
-        39.01% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        39.91% { fill: #161b22; filter: none; }
+        38.1% { fill: #0e4429; }
+        38.40% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        39.30% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_36_4 {
-        animation: eat_b_36_4 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_36_4 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_36_5 {
         0% { fill: #0e4429; }
-        40.32% { fill: #0e4429; }
-        40.62% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        41.52% { fill: #161b22; filter: none; }
+        39.68% { fill: #0e4429; }
+        39.98% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        40.88% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_36_5 {
-        animation: eat_b_36_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_36_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_37_1 {
         0% { fill: #0e4429; }
-        41.94% { fill: #0e4429; }
-        42.24% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        43.14% { fill: #161b22; filter: none; }
+        41.27% { fill: #0e4429; }
+        41.57% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        42.47% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_37_1 {
-        animation: eat_b_37_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_37_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_38_0 {
         0% { fill: #006d32; }
-        43.55% { fill: #006d32; }
-        43.85% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        44.75% { fill: #161b22; filter: none; }
+        42.86% { fill: #006d32; }
+        43.16% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        44.06% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_38_0 {
-        animation: eat_b_38_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_38_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_40_0 {
         0% { fill: #0e4429; }
-        45.16% { fill: #0e4429; }
-        45.46% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        46.36% { fill: #161b22; filter: none; }
+        44.44% { fill: #0e4429; }
+        44.74% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        45.64% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_40_0 {
-        animation: eat_b_40_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_40_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_40_1 {
         0% { fill: #0e4429; }
-        46.77% { fill: #0e4429; }
-        47.07% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        47.97% { fill: #161b22; filter: none; }
+        46.03% { fill: #0e4429; }
+        46.33% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        47.23% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_40_1 {
-        animation: eat_b_40_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_40_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_40_5 {
         0% { fill: #0e4429; }
-        48.39% { fill: #0e4429; }
-        48.69% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        49.59% { fill: #161b22; filter: none; }
+        47.62% { fill: #0e4429; }
+        47.92% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        48.82% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_40_5 {
-        animation: eat_b_40_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_40_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_41_0 {
         0% { fill: #0e4429; }
-        50% { fill: #0e4429; }
-        50.30% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        51.20% { fill: #161b22; filter: none; }
+        49.21% { fill: #0e4429; }
+        49.51% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        50.41% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_41_0 {
-        animation: eat_b_41_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_41_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_41_2 {
         0% { fill: #0e4429; }
-        51.61% { fill: #0e4429; }
-        51.91% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        52.81% { fill: #161b22; filter: none; }
+        50.79% { fill: #0e4429; }
+        51.09% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        51.99% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_41_2 {
-        animation: eat_b_41_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_41_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_42_1 {
         0% { fill: #0e4429; }
-        53.23% { fill: #0e4429; }
-        53.53% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        54.43% { fill: #161b22; filter: none; }
+        52.38% { fill: #0e4429; }
+        52.68% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        53.58% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_42_1 {
-        animation: eat_b_42_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_42_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_42_5 {
         0% { fill: #0e4429; }
-        54.84% { fill: #0e4429; }
-        55.14% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        56.04% { fill: #161b22; filter: none; }
+        53.97% { fill: #0e4429; }
+        54.27% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        55.17% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_42_5 {
-        animation: eat_b_42_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_42_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_43_1 {
         0% { fill: #006d32; }
-        56.45% { fill: #006d32; }
-        56.75% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        57.65% { fill: #161b22; filter: none; }
+        55.56% { fill: #006d32; }
+        55.86% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        56.76% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_43_1 {
-        animation: eat_b_43_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_43_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_43_2 {
         0% { fill: #26a641; }
-        58.06% { fill: #26a641; }
-        58.36% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        59.26% { fill: #161b22; filter: none; }
+        57.14% { fill: #26a641; }
+        57.44% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        58.34% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #26a641; }
       }
       .b_43_2 {
-        animation: eat_b_43_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_43_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_43_3 {
         0% { fill: #006d32; }
-        59.68% { fill: #006d32; }
-        59.98% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        60.88% { fill: #161b22; filter: none; }
+        58.73% { fill: #006d32; }
+        59.03% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        59.93% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_43_3 {
-        animation: eat_b_43_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_43_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_43_6 {
         0% { fill: #26a641; }
-        61.29% { fill: #26a641; }
-        61.59% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        62.49% { fill: #161b22; filter: none; }
+        60.32% { fill: #26a641; }
+        60.62% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        61.52% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #26a641; }
       }
       .b_43_6 {
-        animation: eat_b_43_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_43_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_44_3 {
         0% { fill: #006d32; }
-        62.9% { fill: #006d32; }
-        63.20% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        64.10% { fill: #161b22; filter: none; }
+        61.9% { fill: #006d32; }
+        62.20% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        63.10% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_44_3 {
-        animation: eat_b_44_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_44_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_44_4 {
         0% { fill: #0e4429; }
-        64.52% { fill: #0e4429; }
-        64.82% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        65.72% { fill: #161b22; filter: none; }
+        63.49% { fill: #0e4429; }
+        63.79% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        64.69% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_44_4 {
-        animation: eat_b_44_4 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_44_4 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_44_5 {
         0% { fill: #26a641; }
-        66.13% { fill: #26a641; }
-        66.43% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        67.33% { fill: #161b22; filter: none; }
+        65.08% { fill: #26a641; }
+        65.38% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        66.28% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #26a641; }
       }
       .b_44_5 {
-        animation: eat_b_44_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_44_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_44_6 {
         0% { fill: #0e4429; }
-        67.74% { fill: #0e4429; }
-        68.04% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        68.94% { fill: #161b22; filter: none; }
+        66.67% { fill: #0e4429; }
+        66.97% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        67.87% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_44_6 {
-        animation: eat_b_44_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_44_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_45_0 {
         0% { fill: #0e4429; }
-        69.35% { fill: #0e4429; }
-        69.65% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        70.55% { fill: #161b22; filter: none; }
+        68.25% { fill: #0e4429; }
+        68.55% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        69.45% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_45_0 {
-        animation: eat_b_45_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_45_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_45_5 {
         0% { fill: #0e4429; }
-        70.97% { fill: #0e4429; }
-        71.27% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        72.17% { fill: #161b22; filter: none; }
+        69.84% { fill: #0e4429; }
+        70.14% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        71.04% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_45_5 {
-        animation: eat_b_45_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_45_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_45_6 {
         0% { fill: #006d32; }
-        72.58% { fill: #006d32; }
-        72.88% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        73.78% { fill: #161b22; filter: none; }
+        71.43% { fill: #006d32; }
+        71.73% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        72.63% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_45_6 {
-        animation: eat_b_45_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_45_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_46_5 {
         0% { fill: #0e4429; }
-        74.19% { fill: #0e4429; }
-        74.49% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        75.39% { fill: #161b22; filter: none; }
+        73.02% { fill: #0e4429; }
+        73.32% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        74.22% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_46_5 {
-        animation: eat_b_46_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_46_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_46_6 {
         0% { fill: #39d353; }
-        75.81% { fill: #39d353; }
-        76.11% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        77.01% { fill: #161b22; filter: none; }
+        74.6% { fill: #39d353; }
+        74.90% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        75.80% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #39d353; }
       }
       .b_46_6 {
-        animation: eat_b_46_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_46_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_49_5 {
         0% { fill: #0e4429; }
-        77.42% { fill: #0e4429; }
-        77.72% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        78.62% { fill: #161b22; filter: none; }
+        76.19% { fill: #0e4429; }
+        76.49% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        77.39% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_49_5 {
-        animation: eat_b_49_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_49_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_49_6 {
         0% { fill: #26a641; }
-        79.03% { fill: #26a641; }
-        79.33% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        80.23% { fill: #161b22; filter: none; }
+        77.78% { fill: #26a641; }
+        78.08% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        78.98% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #26a641; }
       }
       .b_49_6 {
-        animation: eat_b_49_6 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_49_6 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_50_0 {
         0% { fill: #39d353; }
-        80.65% { fill: #39d353; }
-        80.95% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        81.85% { fill: #161b22; filter: none; }
+        79.37% { fill: #39d353; }
+        79.67% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        80.57% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #39d353; }
       }
       .b_50_0 {
-        animation: eat_b_50_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_50_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_50_1 {
         0% { fill: #0e4429; }
-        82.26% { fill: #0e4429; }
-        82.56% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        83.46% { fill: #161b22; filter: none; }
+        80.95% { fill: #0e4429; }
+        81.25% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        82.15% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_50_1 {
-        animation: eat_b_50_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_50_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_50_2 {
         0% { fill: #0e4429; }
-        83.87% { fill: #0e4429; }
-        84.17% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        85.07% { fill: #161b22; filter: none; }
+        82.54% { fill: #0e4429; }
+        82.84% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        83.74% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_50_2 {
-        animation: eat_b_50_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_50_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_50_3 {
         0% { fill: #0e4429; }
-        85.48% { fill: #0e4429; }
-        85.78% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        86.68% { fill: #161b22; filter: none; }
+        84.13% { fill: #0e4429; }
+        84.43% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        85.33% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_50_3 {
-        animation: eat_b_50_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_50_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_50_5 {
         0% { fill: #0e4429; }
-        87.1% { fill: #0e4429; }
-        87.40% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        88.30% { fill: #161b22; filter: none; }
+        85.71% { fill: #0e4429; }
+        86.01% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        86.91% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_50_5 {
-        animation: eat_b_50_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_50_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_51_0 {
         0% { fill: #0e4429; }
-        88.71% { fill: #0e4429; }
-        89.01% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        89.91% { fill: #161b22; filter: none; }
+        87.3% { fill: #0e4429; }
+        87.60% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        88.50% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_51_0 {
-        animation: eat_b_51_0 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_51_0 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_51_2 {
         0% { fill: #0e4429; }
-        90.32% { fill: #0e4429; }
-        90.62% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        91.52% { fill: #161b22; filter: none; }
+        88.89% { fill: #0e4429; }
+        89.19% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        90.09% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_51_2 {
-        animation: eat_b_51_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_51_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_51_3 {
         0% { fill: #006d32; }
-        91.94% { fill: #006d32; }
-        92.24% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        93.14% { fill: #161b22; filter: none; }
+        90.48% { fill: #006d32; }
+        90.78% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        91.68% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #006d32; }
       }
       .b_51_3 {
-        animation: eat_b_51_3 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_51_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_51_5 {
         0% { fill: #0e4429; }
-        93.55% { fill: #0e4429; }
-        93.85% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        94.75% { fill: #161b22; filter: none; }
+        92.06% { fill: #0e4429; }
+        92.36% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        93.26% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_51_5 {
-        animation: eat_b_51_5 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_51_5 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_52_1 {
         0% { fill: #26a641; }
-        95.16% { fill: #26a641; }
-        95.46% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        96.36% { fill: #161b22; filter: none; }
+        93.65% { fill: #26a641; }
+        93.95% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        94.85% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #26a641; }
       }
       .b_52_1 {
-        animation: eat_b_52_1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_52_1 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
       @keyframes eat_b_52_2 {
         0% { fill: #0e4429; }
-        96.77% { fill: #0e4429; }
-        97.07% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
-        97.97% { fill: #161b22; filter: none; }
+        95.24% { fill: #0e4429; }
+        95.54% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        96.44% { fill: #161b22; filter: none; }
         96% { fill: #161b22; }
         100% { fill: #0e4429; }
       }
       .b_52_2 {
-        animation: eat_b_52_2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        animation: eat_b_52_2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+    
+      @keyframes eat_b_52_3 {
+        0% { fill: #0e4429; }
+        96.83% { fill: #0e4429; }
+        97.13% { fill: #38bdf8; filter: drop-shadow(0 0 6px #38bdf8); }
+        98.03% { fill: #161b22; filter: none; }
+        96% { fill: #161b22; }
+        100% { fill: #0e4429; }
+      }
+      .b_52_3 {
+        animation: eat_b_52_3 26s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     
     </style>
@@ -815,7 +828,7 @@
   <line x1="1" y1="35" x2="849" y2="35" stroke="#30363d" stroke-width="1"/>
   
   <circle cx="20" cy="18" r="4" fill="#58a6ff"/>
-  <text x="32" y="22" fill="#f0f6fc" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600">310 contributions in the last year</text>
+  <text x="32" y="22" fill="#f0f6fc" font-family="'Fira Code', Consolas, monospace" font-size="12" font-weight="600">311 contributions in the last year</text>
   <text x="660" y="22" fill="#7ee787" font-family="'Fira Code', Consolas, monospace" font-size="11">&#x25CF; Live Eating Radar</text>
 
   <!-- Month Labels -->
@@ -1206,7 +1219,7 @@
     <rect x="812.0" y="60.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect class="b_52_1" x="812.0" y="74.5" width="11" height="11" rx="2" fill="#26a641"/>
     <rect class="b_52_2" x="812.0" y="89.0" width="11" height="11" rx="2" fill="#0e4429"/>
-    <rect x="812.0" y="103.5" width="11" height="11" rx="2" fill="#161b22"/>
+    <rect class="b_52_3" x="812.0" y="103.5" width="11" height="11" rx="2" fill="#0e4429"/>
     <rect x="812.0" y="118.0" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="812.0" y="132.5" width="11" height="11" rx="2" fill="#161b22"/>
     <rect x="812.0" y="147.0" width="11" height="11" rx="2" fill="#161b22"/>
