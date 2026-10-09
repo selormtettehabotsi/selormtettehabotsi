@@ -26,18 +26,18 @@
   <g transform="translate(32, 48)" class="bar-progress" style="transform-origin: 32px 48px;">
     <!-- Background track -->
     <rect x="0" y="0" width="786" height="10" rx="5" fill="#21262d"/>
-    <!-- TypeScript (48.3%) -->
-    <rect x="0" y="0" width="379" height="10" rx="5" fill="#3178c6"/>
-    <!-- Python (34.2%) -->
-    <rect x="379" y="0" width="269" height="10" fill="#3572A5"/>
-    <!-- JavaScript (13.7%) -->
-    <rect x="648" y="0" width="107" height="10" fill="#f1e05a"/>
-    <!-- CSS (1.7%) -->
-    <rect x="755" y="0" width="13" height="10" fill="#563d7c"/>
-    <!-- HTML (1.5%) -->
-    <rect x="768" y="0" width="11" height="10" fill="#e34c26"/>
-    <!-- Shell (0.6%) -->
-    <rect x="779" y="0" width="4" height="10" rx="5" fill="#89e051"/>
+    <!-- TypeScript (51.1%) -->
+    <rect x="0" y="0" width="401" height="10" rx="5" fill="#3178c6"/>
+    <!-- Python (32.2%) -->
+    <rect x="401" y="0" width="253" height="10" fill="#3572A5"/>
+    <!-- JavaScript (12.9%) -->
+    <rect x="654" y="0" width="101" height="10" fill="#f1e05a"/>
+    <!-- CSS (1.9%) -->
+    <rect x="755" y="0" width="15" height="10" fill="#563d7c"/>
+    <!-- HTML (1.4%) -->
+    <rect x="770" y="0" width="11" height="10" fill="#e34c26"/>
+    <!-- Shell (0.5%) -->
+    <rect x="781" y="0" width="4" height="10" rx="5" fill="#89e051"/>
   </g>
 
   <!-- Language Details Grid -->
@@ -45,36 +45,36 @@
   <g transform="translate(32, 90)">
     <circle cx="6" cy="6" r="5" fill="#3178c6"/>
     <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">TypeScript</text>
-    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">48.3%</text>
+    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">51.1%</text>
   </g>
   <!-- Python -->
   <g transform="translate(290, 90)">
     <circle cx="6" cy="6" r="5" fill="#3572A5"/>
     <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Python</text>
-    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">34.2%</text>
+    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">32.2%</text>
   </g>
   <!-- JavaScript -->
   <g transform="translate(560, 90)">
     <circle cx="6" cy="6" r="5" fill="#f1e05a"/>
     <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">JavaScript</text>
-    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">13.7%</text>
+    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">12.9%</text>
   </g>
   <!-- CSS -->
   <g transform="translate(32, 130)">
     <circle cx="6" cy="6" r="5" fill="#563d7c"/>
     <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">CSS</text>
-    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">1.7%</text>
+    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">1.9%</text>
   </g>
   <!-- HTML -->
   <g transform="translate(290, 130)">
     <circle cx="6" cy="6" r="5" fill="#e34c26"/>
     <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">HTML</text>
-    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">1.5%</text>
+    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">1.4%</text>
   </g>
   <!-- Shell -->
   <g transform="translate(560, 130)">
     <circle cx="6" cy="6" r="5" fill="#89e051"/>
     <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Shell</text>
-    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">0.6%</text>
+    <text x="120" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">0.5%</text>
   </g>
 </svg>
