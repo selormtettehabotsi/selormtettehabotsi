@@ -69,10 +69,10 @@
   <line x1="35" y1="190" x2="815" y2="190" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
   <!-- Filled Area Wave -->
-  <path d="M35 153 Q 87.5 153 140 162 Q 200 162 260 165 Q 320 165 380 153 Q 440 153 500 95 Q 560 95 620 98 Q 717.5 98 815 70 L815 190 L35 190 Z" fill="url(#waveGrad)"/>
+  <path d="M35 153 Q 87.5 153 140 162 Q 200 162 260 165 Q 320 165 380 153 Q 440 153 500 91 Q 560 91 620 82 Q 717.5 82 815 70 L815 190 L35 190 Z" fill="url(#waveGrad)"/>
 
   <!-- Wave Stroke -->
-  <path class="activity-path" d="M35 153 Q 87.5 153 140 162 Q 200 162 260 165 Q 320 165 380 153 Q 440 153 500 95 Q 560 95 620 98 Q 717.5 98 815 70" stroke="url(#strokeGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path class="activity-path" d="M35 153 Q 87.5 153 140 162 Q 200 162 260 165 Q 320 165 380 153 Q 440 153 500 91 Q 560 91 620 82 Q 717.5 82 815 70" stroke="url(#strokeGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
   <!-- Key Activity Data Nodes -->
   <g class="pulse-dot-anim">
@@ -80,8 +80,8 @@
     <circle cx="140" cy="162" r="4" fill="#818cf8"/>
     <circle cx="260" cy="165" r="4" fill="#38bdf8"/>
     <circle cx="380" cy="153" r="4" fill="#818cf8"/>
-    <circle cx="500" cy="95" r="4" fill="#38bdf8"/>
-    <circle cx="620" cy="98" r="4" fill="#818cf8"/>
+    <circle cx="500" cy="91" r="4" fill="#38bdf8"/>
+    <circle cx="620" cy="82" r="4" fill="#818cf8"/>
     <circle cx="815" cy="70" r="4" fill="#38bdf8"/>
   </g>
 
