@@ -69,10 +69,10 @@
   <line x1="35" y1="190" x2="815" y2="190" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
   <!-- Filled Area Wave -->
-  <path d="M35 151 Q 87.5 151 140 165 Q 200 165 260 165 Q 320 165 380 142 Q 440 142 500 102 Q 560 102 620 70 Q 717.5 70 815 87 L815 190 L35 190 Z" fill="url(#waveGrad)"/>
+  <path d="M35 151 Q 87.5 151 140 165 Q 200 165 260 165 Q 320 165 380 142 Q 440 142 500 102 Q 560 102 620 70 Q 717.5 70 815 84 L815 190 L35 190 Z" fill="url(#waveGrad)"/>
 
   <!-- Wave Stroke -->
-  <path class="activity-path" d="M35 151 Q 87.5 151 140 165 Q 200 165 260 165 Q 320 165 380 142 Q 440 142 500 102 Q 560 102 620 70 Q 717.5 70 815 87" stroke="url(#strokeGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path class="activity-path" d="M35 151 Q 87.5 151 140 165 Q 200 165 260 165 Q 320 165 380 142 Q 440 142 500 102 Q 560 102 620 70 Q 717.5 70 815 84" stroke="url(#strokeGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
   <!-- Key Activity Data Nodes -->
   <g class="pulse-dot-anim">
@@ -82,7 +82,7 @@
     <circle cx="380" cy="142" r="4" fill="#818cf8"/>
     <circle cx="500" cy="102" r="4" fill="#38bdf8"/>
     <circle cx="620" cy="70" r="4" fill="#818cf8"/>
-    <circle cx="815" cy="87" r="4" fill="#38bdf8"/>
+    <circle cx="815" cy="84" r="4" fill="#38bdf8"/>
   </g>
 
   <!-- Moving Radar Scanner Line -->
