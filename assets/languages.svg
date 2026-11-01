@@ -26,18 +26,18 @@
   <g transform="translate(32, 48)" class="bar-progress" style="transform-origin: 32px 48px;">
     <!-- Background track -->
     <rect x="0" y="0" width="786" height="10" rx="5" fill="#21262d"/>
-    <!-- TypeScript (36.5%) -->
+    <!-- TypeScript (36.6%) -->
     <rect x="0" y="0" width="287" height="10" rx="5" fill="#3178c6"/>
     <!-- Python (33.5%) -->
-    <rect x="287" y="0" width="264" height="10" fill="#3572A5"/>
+    <rect x="287" y="0" width="263" height="10" fill="#3572A5"/>
     <!-- JavaScript (20.9%) -->
-    <rect x="551" y="0" width="164" height="10" fill="#f1e05a"/>
+    <rect x="550" y="0" width="164" height="10" fill="#f1e05a"/>
     <!-- CSS (4.9%) -->
-    <rect x="715" y="0" width="38" height="10" fill="#563d7c"/>
+    <rect x="714" y="0" width="38" height="10" fill="#563d7c"/>
     <!-- HTML (2.3%) -->
-    <rect x="753" y="0" width="18" height="10" fill="#e34c26"/>
+    <rect x="752" y="0" width="18" height="10" fill="#e34c26"/>
     <!-- Dockerfile (1.2%) -->
-    <rect x="771" y="0" width="9" height="10" rx="5" fill="#384d54"/>
+    <rect x="770" y="0" width="9" height="10" rx="5" fill="#384d54"/>
   </g>
 
   <!-- Language Details Grid -->
@@ -45,7 +45,7 @@
   <g transform="translate(32, 90)">
     <circle cx="6" cy="6" r="5" fill="#3178c6"/>
     <text x="20" y="10" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">TypeScript</text>
-    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">36.5%</text>
+    <text x="110" y="10" fill="#8b949e" font-family="'Fira Code', monospace" font-size="12">36.6%</text>
   </g>
   <!-- Python -->
   <g transform="translate(290, 90)">
