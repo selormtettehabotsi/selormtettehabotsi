@@ -69,19 +69,19 @@
   <line x1="35" y1="190" x2="815" y2="190" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
   <!-- Filled Area Wave -->
-  <path d="M35 151 Q 87.5 151 140 165 Q 200 165 260 159 Q 320 159 380 148 Q 440 148 500 92 Q 560 92 620 84 Q 717.5 84 815 70 L815 190 L35 190 Z" fill="url(#waveGrad)"/>
+  <path d="M35 153 Q 87.5 153 140 165 Q 200 165 260 160 Q 320 160 380 133 Q 440 133 500 115 Q 560 115 620 95 Q 717.5 95 815 70 L815 190 L35 190 Z" fill="url(#waveGrad)"/>
 
   <!-- Wave Stroke -->
-  <path class="activity-path" d="M35 151 Q 87.5 151 140 165 Q 200 165 260 159 Q 320 159 380 148 Q 440 148 500 92 Q 560 92 620 84 Q 717.5 84 815 70" stroke="url(#strokeGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path class="activity-path" d="M35 153 Q 87.5 153 140 165 Q 200 165 260 160 Q 320 160 380 133 Q 440 133 500 115 Q 560 115 620 95 Q 717.5 95 815 70" stroke="url(#strokeGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
   <!-- Key Activity Data Nodes -->
   <g class="pulse-dot-anim">
-    <circle cx="35" cy="151" r="4" fill="#38bdf8"/>
+    <circle cx="35" cy="153" r="4" fill="#38bdf8"/>
     <circle cx="140" cy="165" r="4" fill="#818cf8"/>
-    <circle cx="260" cy="159" r="4" fill="#38bdf8"/>
-    <circle cx="380" cy="148" r="4" fill="#818cf8"/>
-    <circle cx="500" cy="92" r="4" fill="#38bdf8"/>
-    <circle cx="620" cy="84" r="4" fill="#818cf8"/>
+    <circle cx="260" cy="160" r="4" fill="#38bdf8"/>
+    <circle cx="380" cy="133" r="4" fill="#818cf8"/>
+    <circle cx="500" cy="115" r="4" fill="#38bdf8"/>
+    <circle cx="620" cy="95" r="4" fill="#818cf8"/>
     <circle cx="815" cy="70" r="4" fill="#38bdf8"/>
   </g>
 
@@ -93,7 +93,7 @@
   <text x="160" y="206" fill="#64748b" font-family="'Fira Code', Consolas, monospace" font-size="10">DEC</text>
   <text x="290" y="206" fill="#64748b" font-family="'Fira Code', Consolas, monospace" font-size="10">FEB</text>
   <text x="420" y="206" fill="#64748b" font-family="'Fira Code', Consolas, monospace" font-size="10">APR</text>
-  <text x="550" y="206" fill="#64748b" font-family="'Fira Code', Consolas, monospace" font-size="10">MAY</text>
+  <text x="550" y="206" fill="#64748b" font-family="'Fira Code', Consolas, monospace" font-size="10">JUN</text>
   <text x="680" y="206" fill="#64748b" font-family="'Fira Code', Consolas, monospace" font-size="10">JUL</text>
   <text x="795" y="206" fill="#64748b" font-family="'Fira Code', Consolas, monospace" font-size="10">NOW</text>
 </svg>
